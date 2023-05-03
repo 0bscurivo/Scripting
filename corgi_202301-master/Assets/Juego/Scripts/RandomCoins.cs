@@ -5,7 +5,7 @@ using MoreMountains.Tools;
 using MoreMountains.CorgiEngine;
 using UnityEngine.Events;
 
-public class RandomCoins : RandomMoneda
+public class RandomCoins : MonoBehaviour
 {
     [SerializeField]
     private List<Coin> coins;

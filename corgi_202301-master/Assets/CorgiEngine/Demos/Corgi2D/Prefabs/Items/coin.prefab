@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 21200000}
   - component: {fileID: 9500000}
   - component: {fileID: 5800000}
-  - component: {fileID: 2724047742722762050}
   - component: {fileID: 11400000}
   - component: {fileID: 114000012703423242}
   m_Layer: 0
@@ -126,19 +125,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.56
---- !u!114 &2724047742722762050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 392232fafea8b0c4dbba4e5b54b6e027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  game_object: {fileID: 100000}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +144,6 @@ MonoBehaviour:
   DisableTargetObjectOnPick: 0
   TargetObjectToDisable: {fileID: 0}
   TargetObjectDisableDelay: 1
-  PointsToAdd: 10
 --- !u!114 &114000012703423242
 MonoBehaviour:
   m_ObjectHideFlags: 0

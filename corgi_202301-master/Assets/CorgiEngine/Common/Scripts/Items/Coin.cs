@@ -10,11 +10,11 @@ namespace MoreMountains.CorgiEngine
 	[AddComponentMenu("Corgi Engine/Items/Coin")]
 	public class Coin : PickableItem
 	{
-		[Header("Coin")]
+		//[Header("Coin")]
 
 		/// The amount of points to add when collected
 		[Tooltip("The amount of points to add when collected")]
-		public int PointsToAdd = 10;
+		//public int PointsToAdd = 10;
 
 		/// <summary>
 		/// Triggered when something collides with the coin
@@ -23,7 +23,8 @@ namespace MoreMountains.CorgiEngine
 		protected override void Pick(GameObject picker) 
 		{
 			// we send a new points event for the GameManager to catch (and other classes that may listen to it too)
-			CorgiEnginePointsEvent.Trigger(PointsMethods.Add, PointsToAdd);
+			//CorgiEnginePointsEvent.Trigger(PointsMethods.Add, PointsToAdd);
+			MMEventManager.TriggerEvent(new CorgiEngineEvent(CorgiEngineEventTypes.StarPicked));
 		}
 	}
 }

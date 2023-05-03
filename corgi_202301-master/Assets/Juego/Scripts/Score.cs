@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using MoreMountains.CorgiEngine;
+using MoreMountains.Tools;
+
 //using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class Score : MonoBehaviour, MMEventListener<PickableItemEvent>
 {
     private int numCoins;
     public int coinNeed;
@@ -14,29 +17,47 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //coinLeft = GetComponent<TMP_Text>();
+        coinLeft = GetComponent<TMP_Text>();
         numCoins = 0;
         Door.SetActive(true);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public virtual void OnMMEvent(PickableItemEvent e)
     {
-        if (collision.gameObject.tag == "coin")
+        if (this.gameObject.tag == "coin")
         {
+            MMEventManager.TriggerEvent(new MMGameEvent("coinEvent"));
             numCoins++;
-            Debug.Log(numCoins);
             coinLeft.text = "" + numCoins;
-            if (numCoins == 4)
+            if (numCoins == coinNeed)
             {
                 Debug.Log("la puerta esta abierta!!!");
                 Door.SetActive(false);
-                
+
             }
         }
     }
+    void OnEnable()
+    {
+        this.MMEventStartListening<PickableItemEvent>();
+    }
+    void OnDisable()
+    {
+        this.MMEventStopListening<PickableItemEvent>();
+    }
+    /* private void OnTriggerEnter2D(Collider2D collision)
+     {
+         if (collision.gameObject.tag == "coin")
+         {
+
+
+         }
+     }*/
 
     // Update is called once per frame
     void Update()
     {
        
     }
+
+  
 }
