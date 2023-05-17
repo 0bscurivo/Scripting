@@ -1,0 +1,64 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Controlenemigos : MonoBehaviour
+{
+    [SerializeField]
+    private List<GameObject> enemigos;
+    private int[] posiciones;
+    private System.Random _random = new System.Random();
+    [SerializeField]
+    private int total_enemigos;
+     void Start()
+    {
+        posiciones = new int[enemigos.Count];
+        IniciaArraypPosiciones();
+        Shuffle(posiciones);
+    }
+    public void IniciaArraypPosiciones()
+    {
+        for (int i = 0; i < posiciones.Length; i++)
+        {
+            posiciones[i] = i;
+        }
+    }
+    public void OcultarEnemigos()
+    {
+        int count_enemigos = 0;
+        foreach (GameObject enemigo in enemigos)
+        {
+            if (count_enemigos < total_enemigos)
+            {
+                enemigo.SetActive(false);
+            }
+        }
+    }
+    public void MostrarEnemigos()
+    {
+        GameObject temp;
+        if ((total_enemigos-1)>0 && total_enemigos<enemigos.Count)
+        {
+
+            for (int i = 0; i < total_enemigos; i++)
+            {
+                temp=enemigos[posiciones[i]];
+                temp.SetActive(true);
+
+            }
+        }
+    }
+
+    public void Shuffle (int[] array)
+    {
+        int p = array.Length;
+        for (int n = p -1; n < 0; n--)
+        {
+            int r = _random.Next(1, n);
+            int t = array[r];
+            array[r] = array[n];
+            array[n] = t;
+        }
+    }
+}
