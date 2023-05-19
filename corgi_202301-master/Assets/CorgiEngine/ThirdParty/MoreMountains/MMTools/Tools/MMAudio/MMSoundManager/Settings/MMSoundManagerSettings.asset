@@ -28,16 +28,16 @@ MonoBehaviour:
     MusicVolumeParameter: MusicVolume
     SfxVolumeParameter: SfxVolume
     UIVolumeParameter: UiVolume
-    MasterVolume: 10
+    MasterVolume: 0.31827408
     MasterOn: 1
     MutedMasterVolume: 0
-    MusicVolume: 0.0001
+    MusicVolume: 1.0139158
     MusicOn: 1
-    MutedMusicVolume: 0
-    SfxVolume: 0.0001
+    MutedMusicVolume: 0.120037615
+    SfxVolume: 3.868622
     SfxOn: 1
-    MutedSfxVolume: 0
-    UIVolume: 0.0001
+    MutedSfxVolume: 11.751126
+    UIVolume: 3.868622
     UIOn: 1
     MutedUIVolume: 0
     AutoLoad: 1

@@ -162,10 +162,10 @@ namespace MoreMountains.CorgiEngine
 
 		/// the maximum amount of lives the character can currently have
 		[Tooltip("the maximum amount of lives the character can currently have")]
-		public int MaximumLives = 0;
+		public int MaximumLives = 1;
 		/// the current number of lives 
 		[Tooltip("the current number of lives ")]
-		public int CurrentLives = 0;
+		public int CurrentLives = 1;
 		
 		[Header("Game Over")]
 		/// if this is true, lives will be reset on game over

@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Juego/Scenes/Level 3.unity
     guid: 961202ba08926e04dba302f14b727a56
   - enabled: 1
-    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureGameOver.unity
+    path: Assets/Juego/Scenes/RetroAdventureGameOver.unity
     guid: aba2daab4ea9f82428c58d957862f82d
   - enabled: 1
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
