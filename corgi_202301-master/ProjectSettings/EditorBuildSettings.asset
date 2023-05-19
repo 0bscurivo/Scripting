@@ -5,15 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/CorgiEngine/Demos/StartScreen/SplashScreen.unity
-    guid: 7b96552fd1198fa4eaae54a2f975645e
+  - enabled: 1
+    path: Assets/Juego/Scenes/StartScreen.unity
+    guid: b9cf7e391a5874f80a0485164885fe54
+  - enabled: 1
+    path: Assets/Juego/Scenes/Level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Juego/Scenes/Level 2.unity
+    guid: 093f0326c17351243beec8d9f5b4071f
+  - enabled: 1
+    path: Assets/Juego/Scenes/Level 3.unity
+    guid: 961202ba08926e04dba302f14b727a56
+  - enabled: 1
+    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureGameOver.unity
+    guid: aba2daab4ea9f82428c58d957862f82d
   - enabled: 1
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/LoadingScreen.unity
     guid: 888394d52616e5e42b3b54c3f2bbd3eb
   - enabled: 0
-    path: Assets/CorgiEngine/Demos/StartScreen/StartScreen.unity
-    guid: b9cf7e391a5874f80a0485164885fe54
+    path: Assets/CorgiEngine/Demos/StartScreen/SplashScreen.unity
+    guid: 7b96552fd1198fa4eaae54a2f975645e
   - enabled: 0
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreen.unity
     guid: d89b77a7a68c1844280c6ff2e49f95b8
@@ -212,9 +224,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureCharacterSelection.unity
     guid: 5716dd8c709a03142b13533ed057a262
-  - enabled: 1
-    path: Assets/CorgiEngine/Demos/RetroAdventure/RetroAdventureGameOver.unity
-    guid: aba2daab4ea9f82428c58d957862f82d
   - enabled: 0
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenBigText.unity
     guid: dedb2bed56a01c241be42c5c5b5748ca
@@ -224,19 +233,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSceneLoading/LoadingScreens/MMAdditiveLoadingScreenSimple.unity
     guid: 945e5b97212e8e74ebcd35bddde3970c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Juego/Scenes/Menu.unity
     guid: 4830266c0be94ab4588dfd95fe13c63b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Juego/Scenes/Opciones.unity
     guid: a6bfd48e5e940bd40b3fb3f00833fdd3
-  - enabled: 1
-    path: Assets/Juego/Scenes/Level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Juego/Scenes/Level 2.unity
-    guid: 093f0326c17351243beec8d9f5b4071f
-  - enabled: 1
-    path: Assets/Juego/Scenes/Level 3.unity
-    guid: 961202ba08926e04dba302f14b727a56
   m_configObjects: {}
