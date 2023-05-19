@@ -13,6 +13,8 @@ public class RandomMoneda : MonoBehaviour, MMEventListener<CorgiEngineEvent>
     private  TMP_Text coinLeft;
     [SerializeField]
     private GameObject Puerta;
+    [SerializeField]
+    private AudioSource openSound;
 
     private int MonedasPuerta;
     private int Contador_Monedas;
@@ -28,6 +30,7 @@ public class RandomMoneda : MonoBehaviour, MMEventListener<CorgiEngineEvent>
             if(MonedasPuerta== 0)
             {
                 Monedas[MonedasPuerta].SetActive(true);
+                openSound.Play();
             }
         }
         if (e.EventType == CorgiEngineEventTypes.StarPicked)
